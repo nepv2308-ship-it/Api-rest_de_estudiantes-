@@ -1,8 +1,6 @@
 # API REST con Node.js y Express
 
-> Una API REST básica y escalable estructurada con arquitectura de rutas, configurada con variables de entorno y optimizada para el desarrollo local.
 
----
 
 ## 🚀 Descripción
 
