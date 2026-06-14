@@ -1,11 +1,10 @@
-
+import "dotenv/config";
 import express from "express";
 
 //Crear instancia de express
 const app = express();
+const PORT = process.env.PORT
 
-//Definir puerto
-const PORT = 5000
 
 //especificar que todo sera json
 app.use(express.json());

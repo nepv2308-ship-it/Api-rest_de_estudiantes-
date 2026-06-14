@@ -2,14 +2,15 @@
   "name": "api-rest",
   "version": "1.0.0",
   "description": "",
-  "main": "SRC/index.js",
+  "main": "/index.js",
   "scripts": {
-    "dev": "pnpx nodemon ./SRC/index.js"
+    "dev": "pnpx nodemon ./index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1"
   }
 }
