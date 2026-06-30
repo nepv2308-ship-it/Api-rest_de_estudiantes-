@@ -29,7 +29,10 @@ API-REST/
 ├── .env                    # Variables de entorno (Configuración local)
 ├── nodemon.json            # Configuración de reinicio automático en desarrollo
 └── package.json            # Scripts y dependencias del proyecto
-🗄️ Modelos de la Base de Datos (Prisma)El proyecto cuenta con las siguientes entidades mapeadas en PostgreSQL:Student (students)id (Int, PK, Autoincremental)SudentCode (String, Unique)firstName (String)lastName (String)email (String, Unique)password (String)phone (String, Unique)BirhtDay (DateTime, Opcional)Active (Boolean, Default: true)CreatedAt (DateTime, Default: now())UpdatedAt (DateTime)Subject (subjects)id (Int, PK, Autoincremental)Code (String, Unique)Name (String)Credits (Int, Default: 3)Active (Boolean, Default: true)CreatedAt (DateTime, Default: now())UpdatedAt (DateTime)
+🗄️ Modelos de la Base de Datos (Prisma)El proyecto cuenta con las siguientes entidades mapeadas en PostgreSQL:Student (students)id (Int, PK, Autoincrementa
+l)SudentCode (String, Unique)firstName (String)lastName (String)email (String, Unique)password (String)phone (String, Unique)BirhtDay (DateTime, Opcional)
+Active (Boolean, Default: true)CreatedAt (DateTime, Default: now())UpdatedAt (DateTime)Subject (subjects)id (Int, PK, Autoincremental)Code (String, Unique)Name (String)Credits (Int, Default:
+3)Active (Boolean, Default: true)CreatedAt (DateTime, Default: now())UpdatedAt (DateTime)
 🛣️ Endpoints de la APIAutenticación (/auth.rautes.js)MétodoEndpointMiddleware / ValidaciónDescripciónPOST/registerNingunoRegistra un nuevo estudiante en el sistema.POST/loginvalidate(loginSchema)Autentica un estudiante (Valida correo y contraseña >= 8 y <= 16 caracteres). Retorna token JWT.POST/logoutNingunoCierra la sesión activa del usuario.
 🔑 Seguridad: Para los endpoints protegidos bajo authMiddleware, se debe proveer el token en la cabecera HTTP de la siguiente forma: Authorization: Bearer <TU_TOKEN_JWT>.
 🛠️ Requisitos PreviosAsegúrate de tener instalados los siguientes componentes:Node.js (Versión LTS)pnpm (npm install -g pnpm)
